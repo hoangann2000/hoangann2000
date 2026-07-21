@@ -37,16 +37,6 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img width="49%" src="./assets/metrics.overview.svg" alt="overview" />
-  <img width="49%" src="./assets/metrics.languages.svg" alt="languages" />
-</p>
-
-<p align="center">
-  <img width="49%" src="./assets/metrics.calendar.svg" alt="contribution calendar" />
-  <img width="49%" src="./assets/metrics.habits.svg" alt="coding habits" />
-</p>
-
-<p align="center">
   <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=hoangann2000&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=A855F7&line=A855F7&point=ffffff&area=true" alt="activity graph" />
 </p>
 
