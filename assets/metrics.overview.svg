@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="200" viewBox="0 0 480 200" role="img" aria-label="Overview">
+  <rect width="480" height="200" rx="10" fill="#0d1117" stroke="#A855F7" stroke-opacity="0.35"/>
+  <text x="240" y="92" text-anchor="middle" font-family="'Segoe UI',Inter,sans-serif" font-size="17" font-weight="600" fill="#D8B4FE">Overview</text>
+  <text x="240" y="120" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="12" fill="#8b949e">generating<tspan fill="#A855F7">
+    <animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/>...</tspan></text>
+</svg>

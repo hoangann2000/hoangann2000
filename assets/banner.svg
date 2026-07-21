@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-label="Hoang Le Thien An - Fullstack and AI Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117">
+        <animate attributeName="stop-color"
+                 values="#0d1117;#161226;#0d1117" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#161b22">
+        <animate attributeName="stop-color"
+                 values="#161b22;#1e1435;#161b22" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#A855F7" />
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-1 0; 1 0; -1 0" dur="6s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#D8B4FE" />
+      <stop offset="100%" stop-color="#7DD3FC" />
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#A855F7" stroke-opacity="0.07" stroke-width="1" />
+    </pattern>
+
+    <clipPath id="rounded">
+      <rect width="1000" height="240" rx="14" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#rounded)">
+    <rect width="1000" height="240" fill="url(#bg)" />
+    <rect width="1000" height="240" fill="url(#grid)" />
+
+    <!-- drifting glow orbs -->
+    <circle cx="180" cy="70" r="170" fill="url(#glow)">
+      <animate attributeName="cx" values="180;300;180" dur="12s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="70;150;70" dur="9s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="840" cy="180" r="150" fill="url(#glow)">
+      <animate attributeName="cx" values="840;720;840" dur="14s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="180;60;180" dur="11s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- floating particles -->
+    <g fill="#7DD3FC">
+      <circle cx="120" cy="200" r="2" opacity="0.7">
+        <animate attributeName="cy" values="200;40;200" dur="10s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0.8;0" dur="10s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="420" cy="220" r="1.6" opacity="0.6">
+        <animate attributeName="cy" values="220;30;220" dur="13s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0.7;0" dur="13s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="700" cy="210" r="2.2" opacity="0.5">
+        <animate attributeName="cy" values="210;50;210" dur="11s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0.6;0" dur="11s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="930" cy="230" r="1.4" opacity="0.6">
+        <animate attributeName="cy" values="230;60;230" dur="15s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0;0.7;0" dur="15s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <!-- terminal prompt -->
+    <text x="60" y="72" font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace"
+          font-size="15" fill="#7DD3FC" opacity="0">
+      <tspan fill="#A855F7">~/ann</tspan> <tspan fill="#6b7280">$</tspan> whoami
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.2s" fill="freeze" />
+    </text>
+
+    <!-- name -->
+    <text x="60" y="130" font-family="'Segoe UI',Inter,ui-sans-serif,system-ui,sans-serif"
+          font-size="48" font-weight="800" fill="url(#nameGrad)" opacity="0">
+      Hoang Le Thien An
+      <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.8s" fill="freeze" />
+      <animateTransform attributeName="transform" type="translate"
+                        values="0 14; 0 0" dur="0.8s" begin="0.8s" fill="freeze" />
+    </text>
+
+    <!-- animated underline -->
+    <rect x="60" y="146" width="0" height="3" rx="1.5" fill="url(#accent)">
+      <animate attributeName="width" values="0;330" dur="0.9s" begin="1.4s" fill="freeze" />
+    </rect>
+
+    <!-- role -->
+    <text x="60" y="186" font-family="'Segoe UI',Inter,ui-sans-serif,system-ui,sans-serif"
+          font-size="20" font-weight="600" fill="#c9d1d9" opacity="0">
+      Fullstack &amp; AI Developer
+      <animate attributeName="opacity" values="0;1" dur="0.8s" begin="1.8s" fill="freeze" />
+    </text>
+
+    <!-- location -->
+    <text x="60" y="214" font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace"
+          font-size="13" fill="#8b949e" opacity="0">
+      Danang, Vietnam
+      <animate attributeName="opacity" values="0;1" dur="0.8s" begin="2.2s" fill="freeze" />
+    </text>
+
+    <!-- stack chips -->
+    <g opacity="0" font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" font-size="13">
+      <animate attributeName="opacity" values="0;1" dur="0.9s" begin="2.4s" fill="freeze" />
+      <g>
+        <rect x="620" y="96" width="76" height="28" rx="14" fill="#A855F7" fill-opacity="0.14" stroke="#A855F7" stroke-opacity="0.45" />
+        <text x="658" y="115" fill="#D8B4FE" text-anchor="middle">React</text>
+      </g>
+      <g>
+        <rect x="706" y="96" width="86" height="28" rx="14" fill="#38BDF8" fill-opacity="0.14" stroke="#38BDF8" stroke-opacity="0.45" />
+        <text x="749" y="115" fill="#7DD3FC" text-anchor="middle">Next.js</text>
+      </g>
+      <g>
+        <rect x="802" y="96" width="86" height="28" rx="14" fill="#F472B6" fill-opacity="0.14" stroke="#F472B6" stroke-opacity="0.45" />
+        <text x="845" y="115" fill="#F9A8D4" text-anchor="middle">NestJS</text>
+      </g>
+      <g>
+        <rect x="663" y="134" width="60" height="28" rx="14" fill="#34D399" fill-opacity="0.14" stroke="#34D399" stroke-opacity="0.45" />
+        <text x="693" y="153" fill="#6EE7B7" text-anchor="middle">AI</text>
+      </g>
+      <g>
+        <rect x="733" y="134" width="110" height="28" rx="14" fill="#FBBF24" fill-opacity="0.14" stroke="#FBBF24" stroke-opacity="0.45" />
+        <text x="788" y="153" fill="#FCD34D" text-anchor="middle">TypeScript</text>
+      </g>
+    </g>
+
+    <!-- top accent bar -->
+    <rect x="0" y="0" width="1000" height="3" fill="url(#accent)" />
+  </g>
+</svg>
